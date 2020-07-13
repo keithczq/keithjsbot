@@ -4,7 +4,7 @@ const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config();
 
 ///////////////////// Global constants
-const token = process.env.TELEGRAM_TOKEN;
+// const token = process.env.TELEGRAM_TOKEN;
 // let bot;
 // if (process.env.NODE_ENV === 'production') {
 //    bot = new TelegramBot(token);
