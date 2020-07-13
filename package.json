@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "JS Telegram Bot",
   "main": "index.js",
+  "engines": {
+    "node": "12.4.x"
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "node-telegram-bot-api": "^0.50.0"
