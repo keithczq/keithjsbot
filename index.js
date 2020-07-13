@@ -1,12 +1,17 @@
 ///////////////////// Imports
 const TelegramBot = require('node-telegram-bot-api');
-const config = require('./config.json');
+// const config = require('./config.json');
+require('dotenv').config();
 
 ///////////////////// Global constants
-const token = config.token;
-const bot = new TelegramBot(token, {
-  polling: true
-});
+const token = process.env.TELEGRAM_TOKEN;
+let bot;
+if (process.env.NODE_ENV === 'production') {
+   bot = new TelegramBot(token);
+   bot.setWebHook(process.env.HEROKU_URL + bot.token);
+} else {
+   bot = new TelegramBot(token, { polling: true });
+}
 const botName = "@keithjsbot";
 
 ///////////////////// Commands handlers
