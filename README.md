@@ -2,7 +2,7 @@
 *Soon... I will replace all of Keith's communications*
 
 ## About
-This project is a Telegram chatbot that is meant to act as the server for incoming messages to the bot. You can find the bot on Telegram at @keithjsbot or https://t.me/keithjsbot .
+This project is a Telegram chatbot that is meant to act as the server for incoming messages to the bot. You can find the bot on Telegram at @keithjsbot or https://t.me/keithjsbot . The bot is currently hosted on Heroku!
 
 ## How this came about
 I chanced upon the possibility to download all of one's social media interactions, be if from facebook messenger, whatsapp, telegram etc. Then, I had an epiphany and thought that it would be amazing if I could use all this personal conversation data to train an AI to model after my online speech patterns. If it reaches that stage, I would love to try this on my friends and family and see if it can pass the Turing Test. That would be really exciting!
@@ -15,9 +15,11 @@ I chanced upon the possibility to download all of one's social media interaction
 
 ## Upcoming Features!
 - [x] ~~Upload bot picture~~
-- [ ] Host on live server!
-- [ ] Do bio of bot
-- [ ] Do description of bot
+- [x] Host on live server! (Heroku)
+- [x] Do bio of bot
+- [x] Do description of bot
+- [ ] Make sending of multiple messages synchronous?
+- [ ] Add links to my social pages
 - [ ] Add /help command
 - [ ] Add more robust lines for /keithsays command
 - [ ] Fix profanity filter
